@@ -1,0 +1,18 @@
+.first-logo,
+.second-logo {
+  color: var(--other-bcg-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: var(--main-letter-spacing);
+  text-align: left;
+}
+
+.top-logo {
+  color: var(--third-text-color);
+}
+
+.bottom-logo {
+  color: var(--other-text-color);
+}

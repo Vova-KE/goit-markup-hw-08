@@ -1,0 +1,30 @@
+.body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  background-color: var(--body-main-color);
+}
+.btn {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus,
+.nav-list__link:active,
+.contacts-top__link:hover,
+.contacts-top__link:focus,
+.contacts-top__link:active,
+.contacts-list__link:hover,
+.contacts-list__link:focus,
+.contacts-list__link:active,
+.contacts-list__map:hover,
+.contacts-list__map:focus,
+.contacts-list__map:active {
+  color: var(--accent-color);
+}

@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.logo__link,
+.nav-list__link,
+.contacts-top__link,
+.contacts-list__link {
+  text-decoration: none;
+}
+
+.nav-list,
+.property-list,
+.work-list,
+.team-list,
+.social-list,
+.clients-list,
+.filter-list,
+.cards-list,
+.contacts-list,
+.join-list {
+  list-style: none;
+}
