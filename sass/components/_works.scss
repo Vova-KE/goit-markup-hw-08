@@ -43,3 +43,9 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
+
+@media screen and (max-width: 1199px) {
+  .work.section {
+    display: none;
+  }
+}
