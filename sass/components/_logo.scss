@@ -2,11 +2,11 @@
 .second-logo {
   color: var(--other-bcg-color);
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: var(--main-letter-spacing);
-  text-align: left;
+  text-align: center;
 }
 
 .top-logo {
@@ -15,4 +15,21 @@
 
 .bottom-logo {
   color: var(--other-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    margin-left: 119px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .first-logo,
+  .second-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .footer-logo {
+    margin-left: 0;
+  }
 }
