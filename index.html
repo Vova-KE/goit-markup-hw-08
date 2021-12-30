@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body class="body">
-    <!-- <header class="header-section">
+    <header class="header-section">
       <div class="header container">
-        <a href="./index.html" class="logo__link"
-          ><span class="first-logo">Web</span><span class="second-logo top-logo">Studio</span></a
-        >
+        <div class="header-logo">
+          <a href="./index.html" class="logo__link"
+            ><span class="first-logo">Web</span><span class="second-logo top-logo">Studio</span></a
+          >
+        </div>
         <nav>
           <ul class="nav-list">
             <li class="nav-list__item">
@@ -58,8 +60,66 @@
             <span>+38 096 111 11 11</span></a
           >
         </div>
+        <button type="button" class="open-mob-menu__btn">
+          <svg class="open-mob-menu__btn-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-------------------- mob menu ----------------------->
+
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-wrap">
+          <button type="button" class="close-mob-menu__btn">
+            <svg class="close-mob-menu__btn-icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-top">
+            <ul class="mob-menu-list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link current-mob"
+                  ><span class="mob-menu__text"> Студия</span></a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link"
+                  ><span class="mob-menu__text">Портфолио</span></a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link"><span class="mob-menu__text">Контакты</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-menu-contacts">
+              <a href="tel:+380961111111" class="mob-menu-contacts__link tel">
+                <span>+38 096 111 11 11</span></a
+              >
+              <a href="mailto:info@devstudio.com" class="mob-menu-contacts__link mail">
+                <span>info@devstudio.com</span></a
+              >
+            </div>
+            <ul class="mob-social-list">
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">Instagram</a>
+              </li>
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">Twitter</a>
+              </li>
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">Facebook</a>
+              </li>
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!------------------------------main container---------------------------->
     <main>
       <section class="section no-padding hero">
@@ -143,13 +203,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/works1-img-desktop.jpg    1x,
-                      ./images/desktop/works1-img@2x-desktop.jpg 2x
+                      ./images/desktop/works1-img-desktop-min.jpg    1x,
+                      ./images/desktop/works1-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <img
-                    src="./images/desktop/works1-img-desktop.jpg"
+                    src="./images/desktop/works1-img-desktop-min.jpg"
                     alt="работа с кодом на клавиутаре"
                   />
                 </picture>
@@ -161,13 +221,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/works2-img-desktop.jpg    1x,
-                      ./images/desktop/works2-img@2x-desktop.jpg 2x
+                      ./images/desktop/works2-img-desktop-min.jpg    1x,
+                      ./images/desktop/works2-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <img
-                    src="./images/desktop/works2-img-desktop.jpg"
+                    src="./images/desktop/works2-img-desktop-min.jpg"
                     alt="работа с ноутбуком и смартфоном"
                   />
                 </picture>
@@ -179,13 +239,13 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/works3-img-desktop.jpg    1x,
-                      ./images/desktop/works3-img@2x-desktop.jpg 2x
+                      ./images/desktop/works3-img-desktop-min.jpg    1x,
+                      ./images/desktop/works3-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <img
-                    src="./images/desktop/works3-img-desktop.jpg"
+                    src="./images/desktop/works3-img-desktop-min.jpg"
                     alt="работа с цветом на планшете"
                   />
                 </picture>
@@ -207,23 +267,26 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/team1-img-desktop.jpg    1x,
-                      ./images/desktop/team1-img@2x-desktop.jpg 2x
+                      ./images/desktop/team1-img-desktop-min.jpg    1x,
+                      ./images/desktop/team1-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/tablet/team1-img-tablet.jpg    1x,
-                      ./images/tablet/team1-img@2x-tablet.jpg 2x
+                      ./images/tablet/team1-img-tablet-min.jpg    1x,
+                      ./images/tablet/team1-img@2x-tablet-min.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/mob/team1-img-mob.jpg 1x, ./images/mob/team1-img@2x-mob.jpg 2x"
+                    srcset="
+                      ./images/mob/team1-img-mob-min.jpg    1x,
+                      ./images/mob/team1-img@2x-mob-min.jpg 2x
+                    "
                     media="(min-width:320px)"
                   />
-                  <img src="./images/mob/team1-img-mob.jpg" alt="фото Игоря" />
+                  <img src="./images/mob/team1-img-mob-min.jpg" alt="фото Игоря" />
                 </picture>
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__ocupation">Designer</p>
@@ -264,23 +327,26 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/team2-img-desktop.jpg    1x,
-                      ./images/desktop/team2-img@2x-desktop.jpg 2x
+                      ./images/desktop/team2-img-desktop-min.jpg    1x,
+                      ./images/desktop/team2-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/tablet/team2-img-tablet.jpg    1x,
-                      ./images/tablet/team2-img@2x-tablet.jpg 2x
+                      ./images/tablet/team2-img-tablet-min.jpg    1x,
+                      ./images/tablet/team2-img@2x-tablet-min.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/mob/team2-img-mob.jpg 1x, ./images/mob/team2-img@2x-mob.jpg 2x"
+                    srcset="
+                      ./images/mob/team2-img-mob-min.jpg    1x,
+                      ./images/mob/team2-img@2x-mob-min.jpg 2x
+                    "
                     media="(min-width:320px)"
                   />
-                  <img src="./images/mob/team2-img-mob.jpg" alt="фото Ольги" />
+                  <img src="./images/mob/team2-img-mob-min.jpg" alt="фото Ольги" />
                 </picture>
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p lang="en" class="team-list__ocupation">Frontend Developer</p>
@@ -321,23 +387,26 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/team3-img-desktop.jpg    1x,
-                      ./images/desktop/team3-img@2x-desktop.jpg 2x
+                      ./images/desktop/team3-img-desktop-min.jpg    1x,
+                      ./images/desktop/team3-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/tablet/team3-img-tablet.jpg    1x,
-                      ./images/tablet/team3-img@2x-tablet.jpg 2x
+                      ./images/tablet/team3-img-tablet-min.jpg    1x,
+                      ./images/tablet/team3-img@2x-tablet-min.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/mob/team3-img-mob.jpg 1x, ./images/mob/team3-img@2x-mob.jpg 2x"
+                    srcset="
+                      ./images/mob/team3-img-mob-min.jpg    1x,
+                      ./images/mob/team3-img@2x-mob-min.jpg 2x
+                    "
                     media="(min-width:320px)"
                   />
-                  <img src="./images/mob/team3-img-mob.jpg" alt="фото Николая" />
+                  <img src="./images/mob/team3-img-mob-min.jpg" alt="фото Николая" />
                 </picture>
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p lang="en" class="team-list__ocupation">Marketing</p>
@@ -378,23 +447,26 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/desktop/team4-img-desktop.jpg    1x,
-                      ./images/desktop/team4-img@2x-desktop.jpg 2x
+                      ./images/desktop/team4-img-desktop-min.jpg    1x,
+                      ./images/desktop/team4-img@2x-desktop-min.jpg 2x
                     "
                     media="(min-width:1200px)"
                   />
                   <source
                     srcset="
-                      ./images/tablet/team4-img-tablet.jpg    1x,
-                      ./images/tablet/team4-img@2x-tablet.jpg 2x
+                      ./images/tablet/team4-img-tablet-min.jpg    1x,
+                      ./images/tablet/team4-img@2x-tablet-min.jpg 2x
                     "
                     media="(min-width:768px)"
                   />
                   <source
-                    srcset="./images/mob/team4-img-mob.jpg 1x, ./images/mob/team4-img@2x-mob.jpg 2x"
+                    srcset="
+                      ./images/mob/team4-img-mob-min.jpg    1x,
+                      ./images/mob/team4-img@2x-mob-min.jpg 2x
+                    "
                     media="(min-width:320px)"
                   />
-                  <img src="./images/mob/team4-img-mob.jpg" alt="фото Михаила" />
+                  <img src="./images/mob/team4-img-mob-min.jpg" alt="фото Михаила" />
                 </picture>
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p lang="en" class="team-list__ocupation">UI Designer</p>
@@ -657,12 +729,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>

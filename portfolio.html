@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body">
-    <!-- <header class="header-section">
+    <header class="header-section">
       <div class="header container">
-        <a href="./index.html" class="logo__link"
-          ><span class="first-logo">Web</span><span class="second-logo top-logo">Studio</span></a
-        >
+        <div class="header-logo">
+          <a href="./index.html" class="logo__link"
+            ><span class="first-logo">Web</span><span class="second-logo top-logo">Studio</span></a
+          >
+        </div>
         <nav>
           <ul class="nav-list">
             <li class="nav-list__item">
@@ -58,8 +60,66 @@
             <span>+38 096 111 11 11</span></a
           >
         </div>
+        <button type="button" class="open-mob-menu__btn">
+          <svg class="open-mob-menu__btn-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-------------------- mob menu ----------------------->
+
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-wrap">
+          <button type="button" class="close-mob-menu__btn">
+            <svg class="close-mob-menu__btn-icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-top">
+            <ul class="mob-menu-list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link"
+                  ><span class="mob-menu__text"> Студия</span></a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link current-mob"
+                  ><span class="mob-menu__text">Портфолио</span></a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link"><span class="mob-menu__text">Контакты</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-menu-contacts">
+              <a href="tel:+380961111111" class="mob-menu-contacts__link tel">
+                <span>+38 096 111 11 11</span></a
+              >
+              <a href="mailto:info@devstudio.com" class="mob-menu-contacts__link mail">
+                <span>info@devstudio.com</span></a
+              >
+            </div>
+            <ul class="mob-social-list">
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">Instagram</a>
+              </li>
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">Twitter</a>
+              </li>
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">Facebook</a>
+              </li>
+              <li class="mob-social-list__item">
+                <a href="" class="mob-social-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Выбор разделов-->
       <section class="section portfolio">
@@ -90,27 +150,27 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio1-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio1-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio1-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio1-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio1-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio1-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio1-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio1-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio1-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio1-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio1-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio1-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
                     <img
-                      src="./images/mob/portfolio/portfolio1-img-mob.jpg"
+                      src="./images/mob/portfolio/portfolio1-img-mob-min.jpg"
                       alt="ноутбук со списком сотрудников"
                     />
                   </picture>
@@ -132,27 +192,27 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio2-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio2-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio2-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio2-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio2-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio2-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio2-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio2-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio2-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio2-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio2-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio2-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
                     <img
-                      src="./images/mob/portfolio/portfolio2-img-mob.jpg"
+                      src="./images/mob/portfolio/portfolio2-img-mob-min.jpg"
                       alt="красочная картинка"
                     />
                   </picture>
@@ -174,27 +234,27 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio3-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio3-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio3-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio3-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio3-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio3-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio3-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio3-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio3-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio3-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio3-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio3-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
                     <img
-                      src="./images/mob/portfolio/portfolio3-img-mob.jpg"
+                      src="./images/mob/portfolio/portfolio3-img-mob-min.jpg"
                       alt="логотип ресторана морской еды"
                     />
                   </picture>
@@ -216,26 +276,26 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio4-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio4-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio4-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio4-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio4-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio4-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio4-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio4-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio4-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio4-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio4-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio4-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
-                    <img src="./images/mob/portfolio/portfolio4-img-mob.jpg" alt="наушники" />
+                    <img src="./images/mob/portfolio/portfolio4-img-mob-min.jpg" alt="наушники" />
                   </picture>
                   <p class="cards-list__text">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -255,26 +315,26 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio5-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio5-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio5-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio5-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio5-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio5-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio5-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio5-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio5-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio5-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio5-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio5-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
-                    <img src="./images/mob/portfolio/portfolio5-img-mob.jpg" alt="коробки" />
+                    <img src="./images/mob/portfolio/portfolio5-img-mob-min.jpg" alt="коробки" />
                   </picture>
                   <p class="cards-list__text">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -294,27 +354,27 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio6-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio6-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio6-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio6-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio6-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio6-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio6-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio6-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio6-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio6-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio6-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio6-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
                     <img
-                      src="./images/mob/portfolio/portfolio6-img-mob.jpg"
+                      src="./images/mob/portfolio/portfolio6-img-mob-min.jpg"
                       alt="монитор с картой мира"
                     />
                   </picture>
@@ -336,27 +396,27 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio7-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio7-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio7-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio7-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio7-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio7-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio7-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio7-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio7-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio7-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio7-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio7-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
                     <img
-                      src="./images/mob/portfolio/portfolio7-img-mob.jpg"
+                      src="./images/mob/portfolio/portfolio7-img-mob-min.jpg"
                       alt="раскрытый на какой-то странице журнал"
                     />
                   </picture>
@@ -378,26 +438,29 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio8-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio8-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio8-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio8-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio8-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio8-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio8-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio8-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio8-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio8-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio8-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio8-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
-                    <img src="./images/mob/portfolio/portfolio8-img-mob.jpg" alt="бирка товара" />
+                    <img
+                      src="./images/mob/portfolio/portfolio8-img-mob-min.jpg"
+                      alt="бирка товара"
+                    />
                   </picture>
                   <p class="cards-list__text">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -417,27 +480,27 @@
                   <picture>
                     <source
                       srcset="
-                        ./images/desktop/portfolio/portfolio9-img-desktop.jpg    1x,
-                        ./images/desktop/portfolio/portfolio9-img@2x-desktop.jpg 2x
+                        ./images/desktop/portfolio/portfolio9-img-desktop-min.jpg    1x,
+                        ./images/desktop/portfolio/portfolio9-img@2x-desktop-min.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        ./images/tablet/portfolio/portfolio9-img-tablet.jpg    1x,
-                        ./images/tablet/portfolio/portfolio9-img@2x-tablet.jpg 2x
+                        ./images/tablet/portfolio/portfolio9-img-tablet-min.jpg    1x,
+                        ./images/tablet/portfolio/portfolio9-img@2x-tablet-min.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        ./images/mob/portfolio/portfolio9-img-mob.jpg    1x,
-                        ./images/mob/portfolio/portfolio9-img@2x-mob.jpg 2x
+                        ./images/mob/portfolio/portfolio9-img-mob-min.jpg    1x,
+                        ./images/mob/portfolio/portfolio9-img@2x-mob-min.jpg 2x
                       "
                       media="(min-width:320px)"
                     />
                     <img
-                      src="./images/mob/portfolio/portfolio9-img-mob.jpg"
+                      src="./images/mob/portfolio/portfolio9-img-mob-min.jpg"
                       alt="работа за ноутбуком"
                     />
                   </picture>
@@ -562,5 +625,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
