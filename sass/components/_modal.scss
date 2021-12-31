@@ -14,7 +14,7 @@
 
 .modal {
   position: absolute;
-  max-width: 450px;
+  width: 450px;
   min-height: 609px;
   background-color: var(--body-main-color);
   border-radius: 4px;
@@ -183,7 +183,7 @@
 
 .modal-checkbox__submit {
   margin-top: 30px;
-  min-width: 200px;
+  width: 200px;
   min-height: 50px;
   background-color: var(--other-bcg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -196,6 +196,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

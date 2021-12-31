@@ -9,7 +9,7 @@
   line-height: 1.17;
   letter-spacing: var(--main-letter-spacing);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team-list {
@@ -81,6 +81,7 @@
   .team-title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
   .team-list__item {
     flex-basis: calc((100% - 4 * 30px) / 4);

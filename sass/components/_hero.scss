@@ -87,9 +87,13 @@
   .hero-container {
     height: 600px;
     width: 1200px;
-  }
-  .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  .hero-title {
+    color: var(--other-text-color);
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }
